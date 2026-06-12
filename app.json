@@ -10,7 +10,9 @@
       "backgroundColor": "#1A6B3C",
       "resizeMode": "contain"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.arokya.shopmanager"
@@ -21,7 +23,12 @@
       },
       "package": "com.arokya.shopmanager",
       "versionCode": 1,
-      "softwareKeyboardLayoutMode": "pan"
+      "softwareKeyboardLayoutMode": "pan",
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.INTERNET"
+      ]
     },
     "plugins": [
       "expo-router",
@@ -32,6 +39,14 @@
     ],
     "experiments": {
       "newArchEnabled": false
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "6c49ca4f-44ee-4704-be79-7c7cb363a4db"
+      }
     }
   }
 }
